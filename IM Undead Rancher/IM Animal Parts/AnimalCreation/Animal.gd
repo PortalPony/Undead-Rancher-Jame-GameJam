@@ -13,3 +13,11 @@ func _to_string():
 	var string = ("An animal with " +self.head.to_string().to_lower()+", "+self.body.to_string().to_lower()+", "+self.legs.to_string().to_lower())
 	return string
 	
+func getTotalValue():
+	return self.head.getValue() + self.body.getValue() + self.legs.getValue()
+	
+func isHybrid():
+	if(self.head.getAnimalName() == self.body.getAnimalName() && self.body.getAnimalName() == self.legs.getAnimalName()):
+		return false
+	else:
+		return true

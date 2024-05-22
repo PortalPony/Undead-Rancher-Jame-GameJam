@@ -1,0 +1,44 @@
+Please read this to understand what is capable so far with our modular animal creator!
+
+JSON:
+	The JSON file named 'parts.json' is where all parts should be stored, every animal part MUST be the same format as the
+	rest and it's parameters must make sense to the animal. Also, the imagePath parameter must be the direct path
+	(use the 'Copy Path' shortcut) to the corresponding image.
+	
+Factory:
+	The whole godot project has access to the Factory singleton. This means you can access its functions and class variables
+	from anywhere within the project, some of the key methods available to you are as follows:
+		.getBodies() - returns a list of all the body parts available
+		.getHeads() - returns a list of all the head parts available
+		.getLegs() - returns a list of all the leg parts available
+
+Animal:
+	An animal consists of 3 parts, a 'AnimalHead', a 'AnimalBody' and a 'AnimalLegs'. All these parts can be directly
+	referenced by using dot notation (e.g: AnimalName.head) which will provide you access to all class specific properties
+	All the methods available regarding animals are as such:
+		ANIMAL CLASS:
+			.to_string() - Returns an articulated string describing the animal and it's parts.
+			.getTotalValue() - Returns an int that totals all it's part's values
+			.isHybrid() - Returns true or false based on if the animal is a hybrid or a genuine animal
+		ANIMALPART CLASS:
+			#All animal parts have these base methods:
+			.getAnimalName() - returns a string that states the animal this part belongs to
+			.getValue() - returns the value of the given part
+			.getImagePath() - returns the path as a string to this part's corresponding texture
+		ANIMALHEAD CLASS:
+			.getNoEyes() - returns the value of how many eyes this head has
+			.getNoEars() - returns the value of how many ears this head has
+			.to_string() - returns an articulation of the head
+		ANIMALBODY CLASS:
+			.getSize() - returns the value of the size of this body part
+			.to_string() - returns an articulation of the body
+		ANIMALLEGS CLASS:
+			.getSpeed() - returns the value of the speed of these legs
+			.getFeetType() - returns the string value of what feet these legs have
+			.to_string() - returns an articulation of the legs
+		
+WHEN YOU GET ROUND TO CREATING PARTS THAT CAN BE SOLD/BOUGHT/FOUND MAKE USE OF THE DEFAULT BODYPART SCENE AND
+RETEXTURE IT USING THE SPRITECHANGER SCRIPT METHOD: .changeTexture(STRING: NEWTEXTUREPATH),
+ANY TIME YOU NEED TO DISPLAY A SPECIFIC PART ANYWHERE, USE A SPRITE NODE AND RETEXTURE IT EITHER DIRECTLY, USING THE
+IMAGES OR THROUGH SCRIPT USING THE METHOD.
+	
