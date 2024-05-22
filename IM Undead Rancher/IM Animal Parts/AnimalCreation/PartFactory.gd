@@ -1,4 +1,5 @@
 extends Node
+class_name PartFactory
 
 @onready var AH = preload("res://IM Animal Parts/AnimalCreation/AnimalHead.gd")
 @onready var AB = preload("res://IM Animal Parts/AnimalCreation/AnimalBody.gd")
