@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu2h4p8kvkqqf"]
+
+[ext_resource type="PackedScene" uid="uid://b7q5w2dldgv5r" path="res://IM terrian/base_farm_Map.tscn" id="1_am2m7"]
+
+[node name="MAIN SCEANE GAME" type="Node2D"]
+
+[node name="Base Farm Map" parent="." instance=ExtResource("1_am2m7")]
