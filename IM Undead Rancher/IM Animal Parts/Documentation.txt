@@ -11,7 +11,13 @@ Factory:
 		.getBodies() - returns a list of all the body parts available
 		.getHeads() - returns a list of all the head parts available
 		.getLegs() - returns a list of all the leg parts available
-
+		
+		Important Methods:
+			.getID(STRING ANIMALNAME) - returns the ID of the specific animal's parts (E.g: "Dog" = 0)
+			.getName(INT ID) - returns the animal name of the specified animal ID (E.g: 0 = "Dog")
+			.getExactHead(INT ID) - returns the AnimalHead OBJECT
+			.getExactBody(INT ID) - returns the AnimalBody OBJECT
+			.getExactLegs(INT ID) - returns the AnimalLegs OBJECT
 Animal:
 	An animal consists of 3 parts, a 'AnimalHead', a 'AnimalBody' and a 'AnimalLegs'. All these parts can be directly
 	referenced by using dot notation (e.g: AnimalName.head) which will provide you access to all class specific properties

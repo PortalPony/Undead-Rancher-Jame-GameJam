@@ -1,7 +1,5 @@
 extends Node2D
 
-@onready var PF = preload("res://IM Animal Parts/AnimalCreation/PartFactory.gd")
-
 var partsData = {}
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,4 +12,6 @@ func _ready():
 	
 	print(myAnimal)
 	print(myAnimal.isHybrid())
+	
+	print(Factory.getName(0))
 	
