@@ -1,20 +1,19 @@
-extends Node
-@onready var A = preload("res://IM Animal Parts/AnimalCreation/Animal.gd")
-@onready var AH = preload("res://IM Animal Parts/AnimalCreation/AnimalHead.gd")
-@onready var AB = preload("res://IM Animal Parts/AnimalCreation/AnimalBody.gd")
-@onready var AL = preload("res://IM Animal Parts/AnimalCreation/AnimalLegs.gd")
+extends Node2D
+
 @onready var PF = preload("res://IM Animal Parts/AnimalCreation/PartFactory.gd")
 
+var partsData = {}
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var head = AH.new("Dog", 1, 2, 2)
-	var body = AB.new("T-Rex", 5, 5)
-	var legs = AL.new("Cat",1, "Paws", 5)
-	
-	var animal = A.new(head, body, legs)
-	
-	print(animal.articulate())
-	
 	var factory = PF.new()
-	factory._ready()
+	partsData = factory._ready()
+	
+	var heads = factory.getHeads()
+	var bodies = factory.getBodies()
+	var legs = factory.getLegs()
+	
+	var myAnimal = Animal.new(heads[0], bodies[0], legs[0])
+	
+	print(myAnimal)
+	
 	

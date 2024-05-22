@@ -3,12 +3,15 @@ extends AnimalPart
 class_name AnimalBody
 var size: int
 
-func _init(_animal: String, _value:int, _size: int):
+func _init(_animal: String, _value:int, _size: int, _imagePath: String):
 	self.animal = _animal
 	self.value = _value
 	self.size = _size
+	self.imagePath = _imagePath
 
-func describe():
-	var description: String
-	description = "Hello %s, with %d and %f with %g!" % [self.animal, str(self.value), str(self.size)]
-	print(description)
+func getSize():
+	return self.size
+	
+func _to_string():
+	var string = ("A body that belongs to a " + self.animal)
+	return string

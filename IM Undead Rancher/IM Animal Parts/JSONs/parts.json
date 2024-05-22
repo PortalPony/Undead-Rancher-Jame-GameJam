@@ -1,0 +1,11 @@
+{
+	"heads": [
+		{"animal": "dog", "value": 1, "noEyes": 2, "noEars": 2, "imagePath": "res://IM Animal Parts/TEMPimages/DOGHEAD.png"}
+	],
+	"bodies": [
+		{"animal": "dog", "value": 1, "size": 2, "imagePath": "res://IM Animal Parts/TEMPimages/DOGBODY.png"}
+	],
+	"legs": [
+		{"animal": "dog", "value": 1, "feetType": "paws", "speed": 3, "imagePath": "res://IM Animal Parts/TEMPimages/DOGLEGS.png"}
+	]
+}
