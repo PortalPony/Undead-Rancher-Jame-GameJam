@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://bur1ejxjnsvk1"]
 
-[ext_resource type="Texture2D" uid="uid://dj88fjvy7vwhi" path="res://IM terrian/IM Cozy Farm Assest Pack/free.png" id="1_4fefv"]
+[ext_resource type="Texture2D" uid="uid://dj88fjvy7vwhi" path="res://IM terrian/IM Cozy Farm Assest Pack/free.png" id="1_tf8he"]
 [ext_resource type="Texture2D" uid="uid://y3dnrqwofqca" path="res://IM terrian/Sprout Lands - Sprites - Basic pack/Characters/Free Cow Sprites.png" id="2_5g5ar"]
 [ext_resource type="Texture2D" uid="uid://yxvpd7owyfq2" path="res://IM terrian/Sprout Lands - Sprites - Basic pack/Characters/Free Chicken Sprites.png" id="3_qqejp"]
 [ext_resource type="Texture2D" uid="uid://b5i6hcxe30e8w" path="res://IM terrian/Sprout Lands - Sprites - Basic pack/Objects/Paths.png" id="4_vvhe2"]
@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b5uxc8qub8yfc" path="res://IM terrian/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="6_gutx6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6uird"]
-texture = ExtResource("1_4fefv")
+texture = ExtResource("1_tf8he")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0

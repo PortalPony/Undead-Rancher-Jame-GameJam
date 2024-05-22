@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://clfudhimndwr6"]
+
+[ext_resource type="Script" path="res://IM Animal Parts/animal_assembly.gd" id="1_d0cbt"]
+
+[node name="Animal Assembly" type="Node2D"]
+script = ExtResource("1_d0cbt")
+
+[node name="Leg Button" type="Button" parent="."]
+offset_left = -380.0
+offset_top = 93.0
+offset_right = -289.0
+offset_bottom = 124.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Leg"
+
+[node name="Head Button" type="Button" parent="."]
+offset_left = -99.0
+offset_top = 110.0
+offset_right = 5.0
+offset_bottom = 141.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Head"
+
+[node name="Body Button" type="Button" parent="."]
+offset_left = 264.0
+offset_top = 85.0
+offset_right = 367.0
+offset_bottom = 116.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Body
+"
+
+[connection signal="pressed" from="Leg Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Head Button" to="." method="_on_head_button_pressed"]
+[connection signal="pressed" from="Body Button" to="." method="_on_body_button_pressed"]
