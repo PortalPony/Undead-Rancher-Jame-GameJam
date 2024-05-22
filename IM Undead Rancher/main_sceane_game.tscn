@@ -12,8 +12,8 @@ position = Vector2(-738, -445)
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Main" parent="." instance=ExtResource("2_d8pir")]
-position = Vector2(-35, 67)
 script = ExtResource("3_kqbx7")
 
 [node name="Animal Assembly" parent="." instance=ExtResource("2_d8pir")]
+visible = false
 position = Vector2(-35, 67)

@@ -15,7 +15,6 @@ var animalLegs = {}
 func _ready():
 	loadPartsData()
 	createParts()
-	print(animalHeads)
 
 func loadPartsData():
 	partsData= loadJson("res://IM Animal Parts/JSONs/parts.json")
