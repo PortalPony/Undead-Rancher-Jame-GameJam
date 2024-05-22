@@ -5,6 +5,8 @@ class_name PartFactory
 @onready var AB = preload("res://IM Animal Parts/AnimalCreation/AnimalBody.gd")
 @onready var AL = preload("res://IM Animal Parts/AnimalCreation/AnimalLegs.gd")
 
+@export var part_scene: PackedScene
+
 var partsData = {}
 
 var animalHeads = []
@@ -14,7 +16,6 @@ var animalLegs = []
 func _ready():
 	loadPartsData()
 	createParts()
-	return partsData
 	
 
 func loadPartsData():

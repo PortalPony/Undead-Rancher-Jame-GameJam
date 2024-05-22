@@ -10,22 +10,6 @@ var holding = false
 var legInstantiate
 var headInstantiate
 var bodyInstantiate
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	legInstantiate = leg.instantiate()
-	headInstantiate = head.instantiate()
-	bodyInstantiate = body.instantiate()
-	
-	headInstantiate.position = Vector2(150, -70)
-	legInstantiate.position = Vector2(100, 50)
-	
-	get_parent().add_sibling(legInstantiate)
-	
-	get_parent().add_sibling(headInstantiate)
-	
-	get_parent().add_sibling(bodyInstantiate)
-	print_debug(legInstantiate.position) # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
