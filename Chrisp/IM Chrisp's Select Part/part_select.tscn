@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://b753udip75xxy"]
+
+[ext_resource type="Texture2D" uid="uid://othyd1railp4" path="res://IM Chrisp's Select Part/arrow-03-med-template-video-game-valentine-stamp-graphic-element-computer-pixels-games-black.png" id="1_s3kr0"]
+
+[node name="Part Select" type="Node2D"]
+
+[node name="Leg" type="Node2D" parent="."]
+
+[node name="Right 1" type="Sprite2D" parent="Leg"]
+position = Vector2(273, 494)
+scale = Vector2(0.0592251, 0.223113)
+texture = ExtResource("1_s3kr0")
+
+[node name="Left 1" type="Sprite2D" parent="Leg"]
+position = Vector2(133, 494)
+scale = Vector2(-0.059, -0.223)
+texture = ExtResource("1_s3kr0")
+
+[node name="Button" type="Button" parent="Leg"]
+offset_left = 160.0
+offset_top = 446.0
+offset_right = 168.0
+offset_bottom = 454.0
+scale = Vector2(2.42024, 3.11202)
+text = "Leg"
+metadata/_edit_use_anchors_ = true
+
+[node name="Body" type="Node2D" parent="."]
+position = Vector2(349, 0)
+
+[node name="Right 1" type="Sprite2D" parent="Body"]
+position = Vector2(273, 494)
+scale = Vector2(0.0592251, 0.223113)
+texture = ExtResource("1_s3kr0")
+
+[node name="Left 1" type="Sprite2D" parent="Body"]
+position = Vector2(133, 494)
+scale = Vector2(-0.059, -0.223)
+texture = ExtResource("1_s3kr0")
+
+[node name="Button" type="Button" parent="Body"]
+offset_left = 160.0
+offset_top = 446.0
+offset_right = 168.0
+offset_bottom = 454.0
+scale = Vector2(1.87357, 3.42824)
+text = "Body"
+metadata/_edit_use_anchors_ = true
+
+[node name="Head" type="Node2D" parent="."]
+position = Vector2(726, 0)
+
+[node name="Right 1" type="Sprite2D" parent="Head"]
+position = Vector2(273, 494)
+scale = Vector2(0.0592251, 0.223113)
+texture = ExtResource("1_s3kr0")
+
+[node name="Left 1" type="Sprite2D" parent="Head"]
+position = Vector2(133, 494)
+scale = Vector2(-0.059, -0.223)
+texture = ExtResource("1_s3kr0")
+
+[node name="Button" type="Button" parent="Head"]
+offset_left = 160.0
+offset_top = 446.0
+offset_right = 168.0
+offset_bottom = 454.0
+scale = Vector2(1.7549, 3.46006)
+text = "Head"
+metadata/_edit_use_anchors_ = true
