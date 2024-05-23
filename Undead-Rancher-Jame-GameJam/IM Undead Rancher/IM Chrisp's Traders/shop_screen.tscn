@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvew0xuh8ikq0"]
+
+[ext_resource type="Texture2D" uid="uid://bx37fwfmln4ay" path="res://IM Chrisp's Traders/Emo Trader.webp" id="1_kvsy1"]
+[ext_resource type="Texture2D" uid="uid://dmo2s33g8muqh" path="res://IM Chrisp's Traders/Spider Guy.webp" id="2_rfjsi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ptlw2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rfjsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_kvsy1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Shop Screen" type="Window"]
+mode = 2
+initial_position = 1
+size = Vector2i(1000, 550)
+
+[node name="Trader\'s Sprites" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ptlw2")
+offset = Vector2(800, 250)
+
+[node name="Trader\'s Dialog" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(300, 0)
+offset_right = 300.0
+offset_bottom = 46.0
+text = "Life's a web of chaos. Got any creatures that embody that?"
+fit_content = true
