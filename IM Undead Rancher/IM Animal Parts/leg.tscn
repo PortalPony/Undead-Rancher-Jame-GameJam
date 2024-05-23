@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://kh30oongimti"]
 
 [ext_resource type="Texture2D" uid="uid://cyar44jhgxp2k" path="res://icon.svg" id="1_y882i"]
-[ext_resource type="Script" path="res://IM Animal Parts/SpriteChanger.gd" id="2_ob517"]
+[ext_resource type="Script" path="res://IM Animal Parts/AnimalScripts/SpriteChanger.gd" id="2_bnus5"]
 
 [node name="Leg" type="Sprite2D"]
 z_index = 2
 texture = ExtResource("1_y882i")
-script = ExtResource("2_ob517")
+script = ExtResource("2_bnus5")
