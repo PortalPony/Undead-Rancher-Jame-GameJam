@@ -4,6 +4,6 @@
 [ext_resource type="Script" path="res://IM Animal Parts/SpriteChanger.gd" id="2_a7ex0"]
 
 [node name="Body" type="Sprite2D"]
+z_index = 1
 texture = ExtResource("1_1l2e2")
 script = ExtResource("2_a7ex0")
-texturePath = "res://IM Animal Parts/TEMPimages/DOGBODY.png"

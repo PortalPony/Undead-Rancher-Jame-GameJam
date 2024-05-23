@@ -4,5 +4,6 @@
 [ext_resource type="Script" path="res://IM Animal Parts/SpriteChanger.gd" id="2_ob517"]
 
 [node name="Leg" type="Sprite2D"]
+z_index = 2
 texture = ExtResource("1_y882i")
 script = ExtResource("2_ob517")
