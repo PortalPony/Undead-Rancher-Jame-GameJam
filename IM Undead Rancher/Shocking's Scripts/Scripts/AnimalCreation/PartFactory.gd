@@ -1,9 +1,9 @@
 extends Node
 class_name PartFactory
 
-@onready var AH = preload("res://IM Animal Parts/AnimalCreation/AnimalHead.gd")
-@onready var AB = preload("res://IM Animal Parts/AnimalCreation/AnimalBody.gd")
-@onready var AL = preload("res://IM Animal Parts/AnimalCreation/AnimalLegs.gd")
+@onready var AH = preload("res://Shocking's Scripts/Scripts/AnimalCreation/AnimalHead.gd")
+@onready var AB = preload("res://Shocking's Scripts/Scripts/AnimalCreation/AnimalBody.gd")
+@onready var AL = preload("res://Shocking's Scripts/Scripts/AnimalCreation/AnimalLegs.gd")
 
 @export var part_scene: PackedScene
 
@@ -17,7 +17,7 @@ func _ready():
 	createParts()
 
 func loadPartsData():
-	partsData= loadJson("res://IM Animal Parts/JSONs/parts.json")
+	partsData= loadJson("res://Shocking's Scripts/Scripts/JSONs/parts.json")
 
 	
 func loadJson(path: String) -> Dictionary:
@@ -69,10 +69,10 @@ func getLegs():
 func getID(animalName: String):
 	for key in animalHeads:
 		if animalHeads[key].getAnimalName() == animalName.to_lower():
-			return key
+			return int(key)
 		else:
 			print("Not a valid animal!")
-			return ""
+			return 0
 			
 func getName(ID: int):
 	return animalHeads[ID].getAnimalName()
