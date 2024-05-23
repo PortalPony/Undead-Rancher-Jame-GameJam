@@ -1,0 +1,68 @@
+{
+	"heads": [
+		{
+			"animal": "cow",
+			"value": 1,
+			"noEyes": 2,
+			"noEars": 2,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Cow/cow_head1.png"
+		},
+		{
+			"animal": "chicken",
+			"value": 1,
+			"noEyes": 2,
+			"noEars": 2,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Chicken/chicken_head1.png"
+		},
+		{
+			"animal": "pig",
+			"value": 1,
+			"noEyes": 2,
+			"noEars": 2,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Pig/pig_head1.png"
+		}
+	],
+	"bodies": [
+		{
+			"animal": "cow",
+			"value": 1,
+			"size": 3,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Cow/cow_body1.png"
+		},
+		{
+			"animal": "chicken",
+			"value": 1,
+			"size": 1,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Chicken/chicken_body1.png"
+		},
+		{
+			"animal": "pig",
+			"value": 1,
+			"size": 2,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Pig/pig_body1.png"
+		}
+	],
+	"legs": [
+		{
+			"animal": "cow",
+			"value": 1,
+			"feetType": "hooves",
+			"speed": 1,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Cow/cow_legs1.png"
+		},
+		{
+			"animal": "chicken",
+			"value": 1,
+			"feetType": "hooves",
+			"speed": 1,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Chicken/chicken_legs1.png"
+		},
+		{
+			"animal": "pig",
+			"value": 1,
+			"feetType": "hooves",
+			"speed": 1,
+			"imagePath": "res://IM Animal Parts/AnimalPartImages/Pig/pig_leg1.png"
+		}
+	]
+}

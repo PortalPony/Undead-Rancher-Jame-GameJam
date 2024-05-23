@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cau34t4eto8dy"]
+
+[ext_resource type="Texture2D" uid="uid://cyar44jhgxp2k" path="res://icon.svg" id="1_73o6d"]
+[ext_resource type="Script" path="res://IM Animal Parts/SpriteChanger.gd" id="2_apyif"]
+
+[node name="Head" type="Sprite2D"]
+texture = ExtResource("1_73o6d")
+script = ExtResource("2_apyif")

@@ -1,0 +1,316 @@
+[gd_scene load_steps=4 format=3 uid="uid://clfudhimndwr6"]
+
+[ext_resource type="Script" path="res://IM Animal Parts/animal_assembly.gd" id="1_d0cbt"]
+[ext_resource type="Script" path="res://IM Animal Parts/Slot.gd" id="2_xh02h"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_imenm"]
+
+[node name="Animal Assembly" type="Node2D"]
+script = ExtResource("1_d0cbt")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Leg Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = 144.0
+offset_right = -229.0
+offset_bottom = 175.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Leg"
+
+[node name="Head Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 144.0
+offset_right = 232.0
+offset_bottom = 175.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Head"
+
+[node name="Body Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -104.0
+offset_top = 144.0
+offset_right = -1.0
+offset_bottom = 175.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Body
+"
+
+[node name="GridContainer" type="GridContainer" parent="Control"]
+layout_mode = 0
+offset_left = -64.0
+offset_right = 64.0
+offset_bottom = 128.0
+columns = 3
+
+[node name="Slot" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_imenm")
+expand_mode = 1
+
+[node name="Slot8" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot8"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot9" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot9"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot5" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot5"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot6" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot6"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot7" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot7"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot2" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot2"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot3" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot3"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot4" type="PanelContainer" parent="Control/GridContainer"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer/Slot4"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="GridContainer2" type="GridContainer" parent="Control"]
+layout_mode = 0
+offset_left = -256.0
+offset_right = -128.0
+offset_bottom = 128.0
+columns = 3
+
+[node name="Slot" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot8" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot8"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot9" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot9"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot5" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot5"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot6" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot6"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot7" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot7"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot2" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot2"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot3" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot3"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot4" type="PanelContainer" parent="Control/GridContainer2"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer2/Slot4"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="GridContainer3" type="GridContainer" parent="Control"]
+layout_mode = 0
+offset_left = 128.0
+offset_right = 256.0
+offset_bottom = 128.0
+columns = 3
+
+[node name="Slot" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot8" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot8"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot9" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot9"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot5" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot5"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot6" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot6"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot7" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot7"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot2" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot2"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot3" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot3"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Slot4" type="PanelContainer" parent="Control/GridContainer3"]
+layout_mode = 2
+script = ExtResource("2_xh02h")
+
+[node name="TextureRect" type="TextureRect" parent="Control/GridContainer3/Slot4"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+
+[node name="PartsContainer" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="PartsContainer"]
+
+[connection signal="pressed" from="Control/Leg Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Control/Head Button" to="." method="_on_head_button_pressed"]
+[connection signal="pressed" from="Control/Body Button" to="." method="_on_body_button_pressed"]

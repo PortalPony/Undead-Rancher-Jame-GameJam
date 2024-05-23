@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhapr3pcjjc7b"]
+
+[ext_resource type="Script" path="res://IM Animal Parts/Slot.gd" id="1_gwfeq"]
+[ext_resource type="Script" path="res://IM Animal Parts/Stats.gd" id="2_2ojhg"]
+
+[node name="Slot" type="PanelContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gwfeq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
+script = ExtResource("2_2ojhg")
+
+[node name="debug" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 8

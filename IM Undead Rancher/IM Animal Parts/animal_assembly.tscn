@@ -1,0 +1,209 @@
+[gd_scene load_steps=8 format=3 uid="uid://clfudhimndwr6"]
+
+[ext_resource type="Script" path="res://IM Animal Parts/animal_assembly.gd" id="1_d0cbt"]
+[ext_resource type="PackedScene" uid="uid://bhapr3pcjjc7b" path="res://slot.tscn" id="2_vao5e"]
+[ext_resource type="PackedScene" uid="uid://ckgyivxg8j30w" path="res://passive_slot.tscn" id="3_gdxps"]
+[ext_resource type="Script" path="res://IM Animal Parts/Character.gd" id="3_uwue1"]
+[ext_resource type="Script" path="res://main.gd" id="5_cthoe"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_r0v8v"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7fju3"]
+
+[node name="Animal Assembly" type="Node2D"]
+script = ExtResource("1_d0cbt")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 573.0
+offset_top = 365.0
+offset_right = 613.0
+offset_bottom = 405.0
+
+[node name="Leg Button" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -320.0
+offset_top = 144.0
+offset_right = -229.0
+offset_bottom = 175.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Leg"
+
+[node name="Head Button" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 144.0
+offset_right = 232.0
+offset_bottom = 175.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Head"
+
+[node name="Body Button" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = -104.0
+offset_top = 144.0
+offset_right = -1.0
+offset_bottom = 175.0
+scale = Vector2(2.12955, 3.92835)
+text = "Spawn Body
+"
+
+[node name="Intelligence" type="Label" parent="UI"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = -164.0
+offset_top = 2.0
+offset_right = -74.0
+offset_bottom = 25.0
+
+[node name="IntelligenceText" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = -264.0
+offset_top = 2.0
+offset_right = -170.0
+offset_bottom = 25.0
+text = "Intelligence:"
+
+[node name="Inventory" type="GridContainer" parent="UI"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 1.0
+offset_right = 281.0
+offset_bottom = 129.0
+columns = 3
+
+[node name="Slot2" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="TextureRect" parent="UI/Inventory/Slot2" index="0"]
+texture = SubResource("PlaceholderTexture2D_r0v8v")
+slot_type = 3
+Intelligence = 5
+
+[node name="Slot10" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="TextureRect" parent="UI/Inventory/Slot10" index="0"]
+texture = SubResource("PlaceholderTexture2D_r0v8v")
+slot_type = 3
+Intelligence = 5
+
+[node name="Slot3" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="TextureRect" parent="UI/Inventory/Slot3" index="0"]
+texture = SubResource("PlaceholderTexture2D_7fju3")
+slot_type = 1
+Intelligence = 3
+
+[node name="Slot4" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot5" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot6" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot7" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot8" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot9" parent="UI/Inventory" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Inventory1" type="GridContainer" parent="UI"]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 130.0
+offset_bottom = 128.0
+columns = 3
+
+[node name="Slot2" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="TextureRect" parent="UI/Inventory1/Slot2" index="0"]
+texture = SubResource("PlaceholderTexture2D_r0v8v")
+slot_type = 1
+Intelligence = 5
+
+[node name="Slot10" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="TextureRect" parent="UI/Inventory1/Slot10" index="0"]
+texture = SubResource("PlaceholderTexture2D_r0v8v")
+slot_type = 2
+Intelligence = 5
+
+[node name="Slot3" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="TextureRect" parent="UI/Inventory1/Slot3" index="0"]
+texture = SubResource("PlaceholderTexture2D_7fju3")
+slot_type = 3
+Intelligence = 3
+
+[node name="Slot4" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot5" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot6" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot7" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot8" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Slot9" parent="UI/Inventory1" instance=ExtResource("2_vao5e")]
+layout_mode = 2
+
+[node name="Character" type="Control" parent="UI"]
+anchors_preset = 0
+script = ExtResource("3_uwue1")
+
+[node name="PassiveSlot" parent="UI/Character" instance=ExtResource("3_gdxps")]
+layout_mode = 2
+offset_left = -72.0
+offset_right = -32.0
+slot_type = 1
+
+[node name="PassiveSlot2" parent="UI/Character" instance=ExtResource("3_gdxps")]
+layout_mode = 2
+offset_left = -72.0
+offset_top = 44.0
+offset_right = -32.0
+offset_bottom = 84.0
+slot_type = 2
+
+[node name="PassiveSlot3" parent="UI/Character" instance=ExtResource("3_gdxps")]
+layout_mode = 2
+offset_left = -72.0
+offset_top = 88.0
+offset_right = -32.0
+offset_bottom = 128.0
+slot_type = 3
+
+[node name="PartsContainer" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="PartsContainer"]
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("5_cthoe")
+
+[connection signal="pressed" from="UI/Leg Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="UI/Head Button" to="." method="_on_head_button_pressed"]
+[connection signal="pressed" from="UI/Body Button" to="." method="_on_body_button_pressed"]
+
+[editable path="UI/Inventory/Slot2"]
+[editable path="UI/Inventory/Slot10"]
+[editable path="UI/Inventory/Slot3"]
+[editable path="UI/Inventory1/Slot2"]
+[editable path="UI/Inventory1/Slot10"]
+[editable path="UI/Inventory1/Slot3"]
