@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Undead Rancher"
-run/main_scene="res://main_sceane_game.tscn"
+run/main_scene="res://main_scene_game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Factory="*res://IM Animal Parts/AnimalCreation/PartFactory.gd"
+AnimalCreator="*res://IM Animal Parts/AnimalCreation/AnimalFactory.gd"
 
 [input]
 

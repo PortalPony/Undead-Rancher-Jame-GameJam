@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://dqqhlnl31bauf"]
 
 [ext_resource type="Texture2D" uid="uid://cyar44jhgxp2k" path="res://icon.svg" id="1_1l2e2"]
-[ext_resource type="Script" path="res://IM Animal Parts/SpriteChanger.gd" id="2_a7ex0"]
+[ext_resource type="Script" path="res://IM Animal Parts/AnimalScripts/SpriteChanger.gd" id="2_b3ljj"]
 
 [node name="Body" type="Sprite2D"]
+z_index = 1
 texture = ExtResource("1_1l2e2")
-script = ExtResource("2_a7ex0")
-texturePath = "res://IM Animal Parts/TEMPimages/DOGBODY.png"
+script = ExtResource("2_b3ljj")
