@@ -47,10 +47,8 @@ func _on_button_pressed():
 	legPlacement() # Replace with function body.
 
 
-
 func _on_head_button_pressed():
 	headPlacement() # Replace with function body.
-
 
 
 func _on_body_button_pressed():
