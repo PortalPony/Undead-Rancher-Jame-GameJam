@@ -25,6 +25,8 @@ func _ready():
 	
 	get_parent().add_sibling(bodyInstantiate)
 	print_debug(legInstantiate.position) # Replace with function body.
+	
+	AnimalCreator.CreateNewAnimal("cow", "cow", "cow")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
