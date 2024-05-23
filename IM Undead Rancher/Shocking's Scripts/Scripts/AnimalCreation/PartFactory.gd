@@ -1,9 +1,9 @@
 extends Node
 class_name PartFactory
 
-@onready var AH = preload("res://IM Animal Parts/head.tscn")
-@onready var AB = preload("res://IM Animal Parts/body.tscn")
-@onready var AL = preload("res://IM Animal Parts/leg.tscn")
+@onready var AH = preload("res://Shocking's Scripts/Scripts/AnimalCreation/AnimalHead.gd")
+@onready var AB = preload("res://Shocking's Scripts/Scripts/AnimalCreation/AnimalBody.gd")
+@onready var AL = preload("res://Shocking's Scripts/Scripts/AnimalCreation/AnimalLegs.gd")
 
 @export var part_scene: PackedScene
 
