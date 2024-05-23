@@ -69,10 +69,8 @@ func getLegs():
 func getID(animalName: String):
 	for key in animalHeads:
 		if animalHeads[key].getAnimalName() == animalName.to_lower():
-			return key
-		else:
-			print("Not a valid animal!")
-			return ""
+			return int(key)
+	return 0
 			
 func getName(ID: int):
 	return animalHeads[ID].getAnimalName()
@@ -85,3 +83,4 @@ func getExactBody(ID: int):
 
 func getExactLegs(ID: int):
 	return animalLegs[ID]
+	

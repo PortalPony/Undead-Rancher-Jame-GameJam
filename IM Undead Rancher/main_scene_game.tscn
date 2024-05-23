@@ -10,8 +10,10 @@
 position = Vector2(0, -530)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
 
 [node name="Main" parent="." instance=ExtResource("2_fafrx")]
+visible = false
 script = ExtResource("3_sfitg")
 
 [node name="Animal Assembly" parent="." instance=ExtResource("2_fafrx")]

@@ -6,4 +6,3 @@
 [node name="Body" type="Sprite2D"]
 texture = ExtResource("1_1l2e2")
 script = ExtResource("2_a7ex0")
-texturePath = "res://IM Animal Parts/TEMPimages/DOGBODY.png"
