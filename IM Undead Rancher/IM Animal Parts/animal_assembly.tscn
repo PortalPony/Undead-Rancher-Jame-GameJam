@@ -1,4 +1,3 @@
-
 [gd_scene load_steps=8 format=3 uid="uid://clfudhimndwr6"]
 
 [ext_resource type="Script" path="res://IM Animal Parts/animal_assembly.gd" id="1_d0cbt"]
@@ -6,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://ckgyivxg8j30w" path="res://passive_slot.tscn" id="3_gdxps"]
 [ext_resource type="Script" path="res://IM Animal Parts/Character.gd" id="3_uwue1"]
 [ext_resource type="Script" path="res://main.gd" id="5_cthoe"]
-
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_r0v8v"]
 
@@ -195,9 +193,10 @@ slot_type = 3
 [node name="PartsContainer" type="Node2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="PartsContainer"]
-[node name="Node2D" type="Node2D" parent="."]
 
+[node name="Node2D" type="Node2D" parent="."]
 script = ExtResource("5_cthoe")
+
 [connection signal="pressed" from="UI/Leg Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="UI/Head Button" to="." method="_on_head_button_pressed"]
 [connection signal="pressed" from="UI/Body Button" to="." method="_on_body_button_pressed"]
