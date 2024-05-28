@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhapr3pcjjc7b"]
+
+[ext_resource type="Script" path="res://IM Animal Parts/Slot.gd" id="1_gwfeq"]
+
+[node name="Slot" type="PanelContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gwfeq")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+expand_mode = 1
